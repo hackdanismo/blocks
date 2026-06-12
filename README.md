@@ -4,10 +4,12 @@
 
 ```
 blocks/
-├── index.html
-└── src/
-    └── styles/
-        └── reset.css    # CSS reset code is taken from the reset repository: https://github.com/hackdanismo/reset
+    └── src/
+        └── styles/
+            └── reset.css       # CSS reset is taken from the repository: https://github.com/hackdanismo/reset
+    ├── LICENCE                 # The MIT licence                                
+    ├── README.md               # README markdown file
+    ├── index.html              # The HTML document to create the webpage for the project
 ```
 
 ## Licence
