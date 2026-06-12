@@ -1,0 +1,15 @@
+/* Headings. */
+h1, h2, h3, h4, h5, h6 {
+    /* Avoid line breaks when the headings break onto multiple lines. */
+    text-wrap: balance;
+    /* Break any long words or unbroken strings so they do not overflow their parent container. */
+    overflow-wrap: break-word;
+}
+
+/* Paragraphs. */
+p {
+    /* Aim for readable, natural-looking text blocks with natural line breaks. */
+    text-wrap: pretty;
+    /* Break any long words or unbroken strings so they do not overflow their parent container. */
+    overflow-wrap: break-word;
+}
