@@ -1,1 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TBC.">
+    <meta property="og:title" content="Blocks">
+    <meta property="og:description" content="TBC.">
+    <meta property="og:image" content="https://example.com/preview-image.jpg">
+    <meta property="og:url" content="https://example.com/my-page">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Blocks">
+    <meta property="og:locale" content="en">
 
+    <link rel="icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <title>Blocks</title>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://example.com/#website",
+          "name": "Blocks",
+          "url": "https://example.com/"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://example.com/my-page#webpage",
+          "url": "https://example.com/my-page",
+          "name": "Blocks",
+          "description": "TBC.",
+          "isPartOf": {
+            "@id": "https://example.com/#website"
+          },
+          "inLanguage": "en"
+        }
+      ]
+    }
+    </script>
+
+    <!-- TODO: minify and combine the stylesheets to reduce the number of requests. -->
+    <link rel="stylesheet" href="src/styles/reset.css">
+</head>
+<body>
+    <main role="main">
+        <!-- Page content here. -->
+    </main>
+</body>
+</html>
