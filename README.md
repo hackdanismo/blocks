@@ -7,6 +7,7 @@ blocks/
     └── src/
         └── styles/
             └── base.css        # CSS stylesheet containing all the base styles.
+            └── grid.css        # Responsive grid using CSS grid.
             └── reset.css       # CSS reset is taken from this repository: https://github.com/hackdanismo/reset
     ├── .nvmrc                  # Config file to set the Node version when using NVM.
     ├── .gitignore              # Prevent files being added to version control.
