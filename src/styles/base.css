@@ -13,3 +13,22 @@ p {
     /* Break any long words or unbroken strings so they do not overflow their parent container. */
     overflow-wrap: break-word;
 }
+
+li, figcaption {
+    /* Aim for readable, natural-looking text blocks with natural line breaks. */
+    text-wrap: pretty;
+}
+
+/* Links. */
+a {
+    /* Default underline set for links (not strictly needed, but added anyway). */
+    text-decoration: underline;
+    /* Ensure the default cursor pointer is applied. */
+    cursor: pointer;
+}
+
+/* Links: hover state. */
+a:hover {
+    /* Remove the underline from links when the user hovers over as default behavior. */
+    text-decoration: none;
+}
