@@ -108,6 +108,84 @@ To see the `grid` boundaries during development, use the `debug` mode by adding 
 <html lang="en" data-debug="true"> ... </html>
 ```
 
+### Components
+
+#### Card
+
+```html
+<section class="section">
+    <div class="container">
+        <div class="card-container">
+            <div class="card">
+                <div class="card__content">
+                    <p>This is a card.</p>
+                    <p>This is a card.</p>
+                    <p>This is a card.</p>
+                    <p>This is a card.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__content">
+                    This is a second card.
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__content">
+                    This is a third card.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+```
+
+#### Card with Images
+
+```html
+<section class="section">
+    <div class="container">
+        <div class="card-container">
+            <a href="#" target="_blank" rel="nopener noreferrer">
+                <div class="card">
+                    <img class="card__image" src="https://picsum.photos/200" alt="Description of image 1.">
+                    <div class="card__content">
+                        <div class="flow">
+                            <p>This is a card.</p>
+                            <p>This is a card.</p>
+                            <p>This is a card.</p>
+                            <p>This is a card.</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <div class="card">
+                <img class="card__image" src="https://picsum.photos/200" alt="Description of image 1.">
+                <div class="card__content">
+                    <div class="flow">
+                        This is a second card. <a href="#" target="_blank" rel="noopener noreferrer">Link example</a>.
+                    </div>
+                    <div class="card__cta">
+                        <a href="#" role="button" class="button button--pill u-full-width">Read more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card__image" src="https://picsum.photos/200" alt="Description of image 1.">
+                <div class="card__content">
+                    <div class="flow">
+                        This is a third card.
+                    </div>
+                    <div class="card__cta u-flex-right">
+                        <a href="#" role="button" class="button button--pill">Read more</a>
+                        <a href="#" role="button" class="button button--pill">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+```
+
 ## Development
 
 ### Clone the Repository
