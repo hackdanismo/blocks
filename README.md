@@ -11,11 +11,10 @@ blocks/
         └── styles/
             └── core/
                 └── base.css        # CSS stylesheet containing all the base styles.
-                └── reset.css       # CSS reset is taken from this repository: https://github.
+                └── reset.css       # CSS reset is taken from this repository: https://github.com/hackdanismo/reset
             └── layout/
                 └── grid.css        # Responsive grid using CSS grid.
             └── main.css            # The main stylesheet that imports all seperate files into a single file.
-com/hackdanismo/reset
     ├── .nvmrc                      # Config file to set the Node version when using NVM.
     ├── .gitignore                  # Prevent files being added to version control.
     ├── LICENCE                     # The MIT licence.                                
