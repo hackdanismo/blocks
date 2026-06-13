@@ -11,13 +11,13 @@ blocks/
                 └── reset.css       # CSS reset is taken from this repository: https://github.
             └── layout/
                 └── grid.css        # Responsive grid using CSS grid.
-            └── main.css        # The main stylesheet that imports all seperate files into a single file.
+            └── main.css            # The main stylesheet that imports all seperate files into a single file.
 com/hackdanismo/reset
-    ├── .nvmrc                  # Config file to set the Node version when using NVM.
-    ├── .gitignore              # Prevent files being added to version control.
-    ├── LICENCE                 # The MIT licence.                                
-    ├── README.md               # README markdown file.
-    ├── index.html              # The HTML document to create the webpage for the project.
+    ├── .nvmrc                      # Config file to set the Node version when using NVM.
+    ├── .gitignore                  # Prevent files being added to version control.
+    ├── LICENCE                     # The MIT licence.                                
+    ├── README.md                   # README markdown file.
+    ├── index.html                  # The HTML document to create the webpage for the project.
 ```
 
 ### CSS Reset
