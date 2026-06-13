@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/hackdanismo/blocks/issues"
   },
-  "homepage": "https://github.com/hackdanismo/blocks#readme"
+  "homepage": "https://github.com/hackdanismo/blocks#readme",
+  "devDependencies": {
+    "bun": "^1.3.14"
+  }
 }
