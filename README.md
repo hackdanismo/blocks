@@ -9,6 +9,8 @@ blocks/
             └── blocks.css        # The optimised and minimised stylesheet used for production.
     └── src/
         └── styles/
+            └── components/
+                └── card.css        # Responsive card component.          
             └── core/
                 └── base.css        # CSS stylesheet containing all the base styles.
                 └── reset.css       # CSS reset is taken from this repository: https://github.com/hackdanismo/reset
