@@ -19,5 +19,20 @@ blocks/
 ### CSS Reset
 It is worth noting that the `CSS reset` used for this project can be found in the `reset` repository: [https://github.com/hackdanismo/reset](https://github.com/hackdanismo/reset). Any changes to the `reset` code, should be added to that repository before updating the `reset.css` stylesheet here.
 
+## Development
+
+### Clone the Repository
+To clone the repository, open the terminal and enter the following commands:
+
+```shell
+# HTTPS
+$ git clone https://github.com/hackdanismo/blocks.git
+# SSH
+$ git clone git@github.com:hackdanismo/blocks.git
+
+# Change directory
+$ cd blocks
+```
+
 ## Licence
 The project is created by `Dan Jackson` and released under the [MIT licence](https://github.com/hackdanismo/blocks/blob/main/LICENSE).
