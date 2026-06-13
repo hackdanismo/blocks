@@ -4,6 +4,9 @@
 
 ```
 blocks/
+    └── dist/
+        └── styles/
+            └── blocks.css        # The optimised and minimised stylesheet used for production.
     └── src/
         └── styles/
             └── core/
