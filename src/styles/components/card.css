@@ -1,0 +1,129 @@
+/* Global default values. */
+:root {
+    /* Spacing between each card. */
+    --card-grid-gap: 1rem;
+    /* Minimum width of each card - cards will not shrink below this value. */
+    --card-min-width: 16rem;
+}
+
+.card-container {
+    /* Turn the container into a grid layout. */
+    display: grid;
+    /* 
+     * Define the grid columns.
+     * repeat(...): repeats the column pattern.
+     * auto-fit: creates as many columns as can fit into the available space.
+     * Allows items to wrap onto new rows as the container narrows in width.
+     * minmax(..., 1fr): each column has a minimum width and a maximum width of 1fr, meaning it can grow to share space equally with other columns.
+     * min(100%, var(--card-min-width)): the minimum width is the smaller of: 100% the container, or var(--card-min-width), such as 16rem.
+     * On small screens, the cards are allows to shrink to 100% of the container and avoid overflowing.
+     */
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(min(100%, var(--card-min-width)), 1fr)
+    );
+    /* Adds spacing between each grid item */
+    gap: var(--card-grid-gap);
+    /* Makes grid items stretch to fill the row height helpings cards to have equal height. */
+    align-items: stretch;
+}
+
+/* Styling for each individual card. */
+.card {
+    /* The card height should be the full height of the parent container. */
+    height: 100%;
+    /* Flexbox is used so content inside the card can be arranged vertically. */
+    display: flex;
+    /* Stack child elements from top to bottom. */
+    flex-direction: column;
+    /* Set background color of the card with fallback value if no variable value is provided. */
+    background-color: #fff;
+    /* Set the border. */
+    border: 1px solid #000;
+    /* Padding provides space around the card content with a fallback value. */
+    padding: 1rem;
+    /* Set the border radius, if required, based on a property value, or default to no border radius at all. */
+    border-radius: 0;
+}
+
+/* Image container. */
+.card__image {
+    /* Set the image element to behave like a block-level element. */
+    display: block;
+    /* The image will span the full width of the container. */
+    width: 100%;
+    /* Preserve the 16:9 shape regardless of the image dimensions. */
+    aspect-ratio: 16 / 9;
+    /* Crop the image to fill the container without distortion. */
+    object-fit: cover;
+    /* Add spacing below the image before the card content. */
+    margin-bottom: 1rem;
+}
+
+/* If the card has an image, remove the padding from the card. */
+.card:has(.card__image) {
+    /* Remove the padding. */
+    padding: 0;
+    /* Hide anything that extends beyound the edges of the card. */
+    overflow: hidden;
+}
+
+/* If the card has an image, add the padding to the card content. */
+.card:has(.card__image) .card__content {
+    /* Add internal spacing back to the content area only. */
+    padding: 1rem;
+}
+
+/* Container for the card content. */
+.card__content {
+    /* Allow content to become shorter than the content's natural height. */
+    min-height: 0;
+    /* Allow this section to grow and fill the available vertical space. */
+    flex: 1;
+    /* Use flexbox to arrange inner content visibility. */
+    display: flex;
+    /* Stack the card content from top to bottom. */
+    flex-direction: column;
+}
+
+/* Target links within the card__content container, except for buttons using the .button class. */
+.card__content a:not(.button) {
+    /* Default underline added to links within cards. */
+    text-decoration: underline;
+    /* Inherit the color set to the parent element/container. */
+    color: inherit;
+    /* Inherit the font set to the parent element/container. */
+    font: inherit;
+}
+
+/* Target links within the card__content container for the hover state, except for buttons using the .button class. */
+.card__content a:not(.button):hover {
+    /* Remove underline from links inside the card on hover. */
+    text-decoration: none;
+}
+
+/* Container for content below the main card content e.g. CTA buttons and links. */
+.card__cta {
+    /* Push the content of this container to the bottom of the card. */
+    margin-top: auto;
+    /* Add vertical spacing between the content and this container. */
+    padding-top: 1rem;
+}
+
+/* Apply styling to the card when wrapped inside of a link. */
+a:has(> .card) {
+    /* Set as block-level element. */
+    display: block;
+}
+
+/* Apply styling to the card when wrapped inside of a link. */
+a:has(> .card),
+a:has(> .card):visited,
+a:has(> .card):hover,
+a:has(> .card):focus,
+a:has(> .card):active {
+    /* Inherit the text color to remove the default hyperlink color */
+    color: inherit;
+    /* Remove the underline from text inside of the card when the card is wrapped inside a link. */
+    text-decoration: none;
+}

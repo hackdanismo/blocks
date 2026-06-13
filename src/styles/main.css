@@ -11,3 +11,6 @@
 @import "./core/base.css";
 /* The responsive grid layout created using CSS Grid. */
 @import "./layout/grid.css";
+
+/*** Components ***/
+@import "./components/card.css";
