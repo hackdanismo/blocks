@@ -46,6 +46,7 @@ Once a webpage or application has been setup, add the `blocks.css` stylesheet to
 ### Layout
 
 #### Section and Container
+File location: `src/core/base.css`.
 
 ```html
 <section class="section">
@@ -56,6 +57,7 @@ Once a webpage or application has been setup, add the `blocks.css` stylesheet to
 ```
 
 #### Grid
+File location: `src/layout/grid.css`.
 
 ```html
 <section class="section">
@@ -113,6 +115,7 @@ To see the `grid` boundaries during development, use the `debug` mode by adding 
 ### Components
 
 #### Card
+File location: `src/components/card.css`.
 
 ```html
 <section class="section">
@@ -142,6 +145,7 @@ To see the `grid` boundaries during development, use the `debug` mode by adding 
 ```
 
 #### Card with Images
+File location: `src/components/card.css`.
 
 ```html
 <section class="section">
