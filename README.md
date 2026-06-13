@@ -27,7 +27,7 @@ It is worth noting that the `CSS reset` used for this project can be found in th
 
 ## Using Blocks
 
-### Layout
+### Layout
 
 #### Section and Container
 
