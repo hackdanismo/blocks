@@ -1,0 +1,21 @@
+{
+  "name": "blocks",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hackdanismo/blocks.git"
+  },
+  "keywords": [],
+  "author": "Dan Jackson",
+  "license": "MIT",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/hackdanismo/blocks/issues"
+  },
+  "homepage": "https://github.com/hackdanismo/blocks#readme"
+}
