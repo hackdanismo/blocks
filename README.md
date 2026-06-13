@@ -25,6 +25,75 @@ blocks/
 ### CSS Reset
 It is worth noting that the `CSS reset` used for this project can be found in the `reset` repository: [https://github.com/hackdanismo/reset](https://github.com/hackdanismo/reset). Any changes to the `reset` code, should be added to that repository before updating the `reset.css` stylesheet here.
 
+## Using Blocks
+
+### Layout
+
+#### Section and Container
+
+```html
+<section class="section">
+    <div class="container">
+        <!-- Page content here. -->
+    </div>
+</section>
+```
+
+#### Grid
+
+```html
+<section class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col">col</div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 col-lg-1">col-md-12 col-lg-1</div>
+            <div class="col-md-12 col-lg-1">col-md-12 col-lg-1</div>
+            <div class="col-md-12 col-lg-1">col-md-12 col-lg-1</div>
+            <div class="col-md-12 col-lg-1">col-md-12 col-lg-1</div>
+            <div class="col-md-12 col-lg-1">col-md-12 col-lg-1</div>
+            <div class="col-md-12 col-lg-1">col-md-12 col-lg-1</div>
+            <div class="col-md-12 col-lg-1">col-md-12 col-lg-1</div>
+            <div class="col-md-12 col-lg-1">col-md-12 col-lg-1</div>
+            <div class="col-md-12 col-lg-1">col-md-12 col-lg-1</div>
+            <div class="col-md-12 col-lg-1">col-md-12 col-lg-1</div>
+            <div class="col-md-12 col-lg-1">col-md-12 col-lg-1</div>
+            <div class="col-md-12 col-lg-1">col-md-12 col-lg-1</div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 col-lg-4">col-md-12 col-lg-4</div>
+            <div class="col-md-12 col-lg-4">col-md-12 col-lg-4</div>
+            <div class="col-md-12 col-lg-4">col-md-12 col-lg-4</div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 col-lg-3">col-md-12 col-lg-3</div>
+            <div class="col-md-12 col-lg-3">col-md-12 col-lg-3</div>
+            <div class="col-md-12 col-lg-3">col-md-12 col-lg-3</div>
+            <div class="col-md-12 col-lg-3">col-md-12 col-lg-3</div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 col-lg-6">col-md-12 col-lg-6</div>
+            <div class="col-md-12 col-lg-6">col-md-12 col-lg-6</div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-lg-3">col-md-12 col-lg-3</div>
+            <div class="col-md-12 col-lg-9">col-md-12 col-lg-9</div>
+        </div>
+    </div>
+</section> 
+```
+
+To see the `grid` boundaries during development, use the `debug` mode by adding the following `data-debug` attribute to the `<html>` element:
+
+```html
+<html lang="en" data-debug="true"> ... </html>
+```
+
 ## Development
 
 ### Clone the Repository

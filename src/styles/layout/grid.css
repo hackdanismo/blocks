@@ -5,6 +5,19 @@
     --grid-gap: 1rem;
 }
 
+/*
+ * Debug the grid rows using this selector when needed.
+ * Set the html element to have the data-debug="true" attribute added:
+ * <html data-debug="true"> ... </html>
+ * This helps to see what the grid structure looks like during development.
+ */
+ [data-debug="true"] .row > * {
+    /* Set the background color of each grid cell during debug. */
+    background: #efefef;
+    /* Set the border color of each grid cell during debug.*/
+    border: 1px solid #000;
+}
+
 .row {
     /* Turn the element into a grid container by using CSS Grid. */
     display: grid;

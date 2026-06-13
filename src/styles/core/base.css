@@ -32,3 +32,31 @@ a:hover {
     /* Remove the underline from links when the user hovers over as default behavior. */
     text-decoration: none;
 }
+
+/* Apply this class to each HTML section element. */
+.section {
+    /*
+     * The padding-block property adds vertical padding to the top and bottom.
+     * Set the vertical spacing/padding within a section element.
+     * The section is never smaller than 1rem, grows with the viewport width and never larger than 2rem.
+     * Small screens avoid huge spacing, large screens do not feel cramped.
+     * Define the spacing logic only once inside a single property.
+     * The 8vw part means 8% of the viewport width.
+     */
+    padding-block: clamp(1rem, 8vw, 2rem);
+}
+
+/* Content container. */
+.container {
+    /* 
+     * Allow the container to shrink naturally on small screens and remain responsive.
+     * The outer edge is consistent as the padding and max-width are baked in.
+     * 100% - 2rem: keeps 1rem of space on each side of the container for smaller screen sizes.
+     * The value of 1240px prevents the container from getting too width on larger screens.
+     * min(...): selects the smaller of the two values.
+     * This helps to avoid needing separate horizontal padding on the container and keeps the gutter consistent.
+     */
+    width: min(100% - 2rem, 1240px);
+    /* Center the container horizontally. */
+    margin-inline: auto;
+}
