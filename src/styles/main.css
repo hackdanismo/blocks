@@ -1,0 +1,13 @@
+/*
+ * Import any CSS stylesheets added here.
+ * All stylesheets marked with @import will be included within the optimised CSS stylesheet that is output in the dist/styles/ folder for a project.
+ * The optimised and minimised CSS stylesheet can be found in the dist/ directory: dist/styles/blocks.css.
+ * Run the Bun build script in the package.json file: $ npm run build:css to update the output file.
+ */
+
+ /* The CSS reset stylesheet taken from: https://github.com/hackdanismo/reset */
+@import "./core/reset.css";
+/* Base styles e.g headings, fonts, background color, etc. */
+@import "./core/base.css";
+/* The responsive grid layout created using CSS Grid. */
+@import "./layout/grid.css";
