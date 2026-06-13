@@ -26,6 +26,20 @@ blocks/
 It is worth noting that the `CSS reset` used for this project can be found in the `reset` repository: [https://github.com/hackdanismo/reset](https://github.com/hackdanismo/reset). Any changes to the `reset` code, should be added to that repository before updating the `reset.css` stylesheet here.
 
 ## Using Blocks
+Once a webpage or application has been setup, add the `blocks.css` stylesheet to the `<head>` section of the page:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Webpage Title</title>
+
+    <!-- Include the blocks CSS stylsheet -->
+    <link rel="stylesheet" href="dist/styles/blocks.css">
+</html>
+```
 
 ### Layout
 
